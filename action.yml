@@ -1,0 +1,11 @@
+name: 'Automatically Add PR Labels'
+description: 'Automatically add additional pull request labels based on another label.'
+inputs:
+  label:
+    description: 'The label to trigger additional labels to be added.'
+    required: true
+  additonal-labels:
+    description: 'Additional labels to be added to the pull request.'
+runs:
+  using: 'node12'
+  main: 'index.js'
