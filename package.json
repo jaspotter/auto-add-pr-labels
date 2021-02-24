@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/jaspotter/auto-add-pr-labels/issues"
   },
-  "homepage": "https://github.com/jaspotter/auto-add-pr-labels#readme"
+  "homepage": "https://github.com/jaspotter/auto-add-pr-labels#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
 }
