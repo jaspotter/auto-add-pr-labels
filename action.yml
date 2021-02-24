@@ -1,10 +1,14 @@
 name: 'Automatically Add PR Labels'
 description: 'Automatically add additional pull request labels based on another label.'
 inputs:
+  github-token:
+    description: 'GitHub Token as provided by secrets'
+    default: ${{ github.token }}
+    required: true
   label:
     description: 'The label to trigger additional labels to be added.'
     required: true
-  additonal-labels:
+  additional-labels:
     description: 'Additional labels to be added to the pull request.'
 runs:
   using: 'node12'
